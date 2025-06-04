@@ -13,88 +13,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="manifest" href="/site.webmanifest">
-    <style>
-        body {
-            font-family: Inter, sans-serif;
-            background-color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            color: #333;
-            font-weight: bold;
-            font-size: 3em;
-        }
-        p {
-            color: #666;
-            padding-top: 2em;
-        }
-        #header {
-            height: 3em;
-            padding: 0;
-        }
-        #footer {
-            height: 12em;
-            margin: 50px 0 0 0;
-            padding-top: 5em;
-            background-color: #2d2d2e;
-        }
-        #header, #footer {
-            width: 100%;
-            margin: 0;
-            /* background-color: #d7aab6; */
-        }
-        .logo {
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 1.5em;
-            margin-top: 0.5em;
-        }
-        .btn-primary {
-            background-color: #fff;
-            color: #000;
-            border-color: #fff;
-            padding: 10px 20px;
-            font-size: 1em;
-            text-decoration: none;
-            opacity: 0.8;
-            /* min-width: 120px; */
-            text-align: center;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-        .btn-primary:hover, .btn-primary a:hover {
-            background-color: #21DF2E;
-            color: #000;
-            /* opacity: 0.5; */
-        }
-        #content {
-            margin-top: 50px;
-        }
-        #social a {
-            margin-right: 10px;
-        }
-        #social a:hover {
-            opacity: 0.5;
-        }
-        #footer button, #footer a {
-            border-radius: 30px;
-        }
-        #content {
-            padding-bottom: 50px;
-        }
-        .img-profile {
-            width: 100%; 
-            max-width: 600px; 
-            height: auto; 
-            border-radius: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container-fluid text-left" id="wrapper">
         <div id="header">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-md-4 offset-md-1">
                     <div class="logo" id="logo">
                         <svg width="300" height="auto" viewBox="0 0 1209 165" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -121,11 +45,28 @@
                         </svg>
                     </div>
                 </div>
-                <nav class="col-md-3 offset-md-2 text-right">
-                    <a href="about.html" class="btn btn-primary">About</a>
-                    <a href="work.html" class="btn btn-primary">Work</a>
-                    <a href="contact.html" class="btn btn-primary">Contact</a>
-                </nav>
+                <div class="col-md-5">
+                    <!-- Bootstrap mobile-compliant navbar -->
+                    <nav class="navbar navbar-expand-md navbar-light justify-content-end">
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainNavbar"
+                            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link btn btn-primary mx-1 my-1">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="work.html" class="nav-link btn btn-primary mx-1 my-1">Work</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link btn btn-primary mx-1 my-1">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
         <div id="content">

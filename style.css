@@ -23,6 +23,7 @@ p {
 #header {
     height: 3em;
     padding: 0;
+    background-color: #fff;
 }
 
 #footer {
@@ -67,6 +68,11 @@ p {
     /* opacity: 0.5; */
 }
 
+.nav-item:hover {
+    background-color: #21DF2E;
+    border: 1px solid #000;
+}
+
 #content {
     margin-top: 50px;
 }
@@ -93,4 +99,20 @@ p {
     max-width: 600px;
     height: auto;
     border-radius: 8px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 56px; /* Height of navbar */
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 56px);
+    background: #21DF2E;
+    z-index: 1050;
+    overflow-y: auto;
+  }
+  .navbar-collapse.collapse.show {
+    display: block !important;
+  }
 }

@@ -115,4 +115,19 @@ p {
   .navbar-collapse.collapse.show {
     display: block !important;
   }
+  .navbar-nav {
+    width: 100%;
+    padding-left: 0;
+    margin: 0;
+    align-items: flex-end; /* right align items */
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-link {
+    width: 100%;
+    text-align: right; /* right align text */
+    padding-right: 1.5rem; /* add right padding */
+    padding-left: 0;
+  }
 }

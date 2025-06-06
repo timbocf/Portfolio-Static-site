@@ -101,7 +101,7 @@ p {
     border-radius: 8px;
 }
 
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   .navbar-collapse {
     position: fixed;
     top: 56px; /* Height of navbar */
@@ -130,4 +130,4 @@ p {
     padding-right: 1.5rem; /* add right padding */
     padding-left: 0;
   }
-}
+} */
